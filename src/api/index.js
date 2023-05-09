@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:4016" });
+const API = axios.create({ baseURL: "http://ec2-13-235-82-189.ap-south-1.compute.amazonaws.com:4016" });
 
 export const getProducts = (page) => API.get(`product/?page=2`);
 export const updateProduct = (id, updatedProduct) =>
